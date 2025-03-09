@@ -8,7 +8,7 @@
 #include <stdio.h>
 
 
-int main(void) {
+int cake(void) {
 	
 	int layers;
 	
