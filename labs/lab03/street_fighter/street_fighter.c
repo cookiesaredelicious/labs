@@ -27,7 +27,7 @@ int main (void){
 	printf("Enter Fighter 1's attack power (1-10): "); //atk
 	scanf("%d", &p1.atk);
 	
-	printf("Enter an ascii character for Fighter 1's attack command: "); //keybind
+	printf("Enter an ascii character for Fighter 1's attack command: \n"); //keybind
 	scanf(" %c", &p1.keybind);
 	
 	
@@ -37,12 +37,12 @@ int main (void){
 	printf("Enter an ascii character for Fighter 2's attack command: ");
 	scanf(" %c", &p2.keybind);
 	
-	printf("Fight!\n\n");
+	printf("\nFIGHT!\n\n");
 	
 	char p1_input = '\0';
 	char p2_input = '\0';
 	
-	while (p1.hp > 0 || p2.hp > 0 ) {
+	while (p1.hp > 0 && p2.hp > 0 ) {
 		
 		printf("Fighter 1, press %c to attack: ", p1.keybind); //I wonder if this part can be less repetitive using functions?
 		scanf(" %c", &p1_input);
@@ -77,9 +77,9 @@ int main (void){
 	printf("\n\n");
 	
 	if (p1.hp >= 0) { //Assignment didn't specify what happens at 0 hp
-		printf("Player 1 Wins!");
+		printf("Player 1 Wins!\n");
 	} else if (p2.hp >= 0) {
-		printf("Player 2 Wins!");
+		printf("Player 2 Wins!\n");
 	} else {
 		printf("It's a draw!\n");
 	}
