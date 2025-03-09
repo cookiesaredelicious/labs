@@ -68,7 +68,7 @@ void print_shortest_path (char start, char end) {
 	}
 }
 
-int main(void) {
+int letters_between(void) {
 	char start, end;
 
 	printf("Please enter starting letter: ");
