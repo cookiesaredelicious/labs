@@ -7,6 +7,9 @@
 
 #include <stdio.h>
 
+int calculate_distance_forward(char start, char target);
+int calculate_distance_backward(char start, char target);
+
 int main(void) {
 	char start, target;
 
