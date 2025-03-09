@@ -21,7 +21,7 @@ int main (void){
 	struct fighterStats p2 = {0,MAX_HEALTH,'\0'};
 	
 	
-	printf("Welcome to Street Fighter\n\n");
+	printf("Welcome to Street Fighter!\n\n");
 	
 	
 	printf("Enter Fighter 1's attack power (1-10): "); //atk
